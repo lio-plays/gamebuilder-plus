@@ -11,6 +11,14 @@ You can use formatting in messages, e.g. `<color=yellow>text</color>`.
 Consider using JavaScript [template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) 
 instead of concatenating strings, like `` `string text ${expression} string text` ``
 
+Or wrappers
+```
+/** logs all args as one json array */
+function jlog(...o) { log(JSON.stringify(o)) };
+```
+
+
+
 # Cards
 
 * `exportcards` – saves customized cards to a directory.

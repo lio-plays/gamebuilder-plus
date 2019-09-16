@@ -1,4 +1,10 @@
 
+/** logs all args as one json array */
+function jlog(...o) { log(JSON.stringify(o)) };
+
+/** give it ActorRef[], logs array of names */
+function alog(a) { log(JSON.stringify(a.map(a => (a ? getDisplayName(a) : '???')).sort())) };
+
 function expandVariable(text, targetActor) {
     /* 
     TODO: return (props.VariableText === "$PLAYER") ? getPlayerNickName() : (getValue(name)).toString();
