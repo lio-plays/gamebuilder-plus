@@ -1,0 +1,12 @@
+{
+  "name": "cards",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "author": "",
+  "license": "?",
+  "dependencies": {
+    "@types/three": "^0.103.2"
+  }
+}
